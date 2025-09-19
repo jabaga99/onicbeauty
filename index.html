@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONIC Beauty | Salón de Belleza en Madrid</title>
+    <meta name="description" content="Descubre ONIC Beauty, tu salón de belleza en Madrid. Expertos en tratamientos faciales, estética, manicura y pedicura. ¡Reserva tu cita y siéntete radiante!">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1 class="logo-title">ONIC Beauty</h1>
+                        <p class="logo-subtitle">Salón de Belleza en Madrid</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary header-btn" id="reservar-btn">
+                    <i data-lucide="calendar"></i>
+                    <span>Reservar Cita</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Image Carousel -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-wrapper" id="carousel-wrapper">
+                <div class="carousel-slide active">
+                    <img src="images/uno.webp" alt="ONIC Beauty - Tratamiento de cejas" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/dos.webp" alt="ONIC Beauty - Tratamiento de pestañas" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/tres.webp" alt="ONIC Beauty - Tratamiento facial" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/cuatro.webp" alt="ONIC Beauty - Micropigmentación" loading="lazy">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/cinco.webp" alt="ONIC Beauty - Salón interior" loading="lazy">
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="carousel-btn carousel-btn-prev" id="carousel-prev" aria-label="Imagen anterior">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-btn-next" id="carousel-next" aria-label="Siguiente imagen">
+                <i data-lucide="chevron-right"></i>
+            </button>
+            
+            <!-- Dots Indicator -->
+            <div class="carousel-dots" id="carousel-dots">
+                <button class="carousel-dot active" data-slide="0" aria-label="Ir a imagen 1"></button>
+                <button class="carousel-dot" data-slide="1" aria-label="Ir a imagen 2"></button>
+                <button class="carousel-dot" data-slide="2" aria-label="Ir a imagen 3"></button>
+                <button class="carousel-dot" data-slide="3" aria-label="Ir a imagen 4"></button>
+                <button class="carousel-dot" data-slide="4" aria-label="Ir a imagen 5"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Tu belleza, nuestra pasión</h2>
+                <p class="hero-description">
+                    ¿Necesitas cuidarte y mimarte? Pásate por Onic Beauty en Madrid. 
+                    ¡Echa un vistazo a nuestro extenso catálogo de servicios y elige los que más te gusten! 
+                    ¡Te verás y sentirás genial!
+                </p>
+                <div class="hero-info">
+                    <div class="rating">
+                        <div class="stars">
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                            <i data-lucide="star" class="star filled"></i>
+                        </div>
+                        <span class="rating-score">5.0</span>
+                        <span class="rating-count">(7 opiniones)</span>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="location">
+                        <i data-lucide="map-pin"></i>
+                        <span>Calle de Lombía 6, Madrid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h3 class="section-title">Nuestros Servicios</h3>
+            <div class="services-grid" id="services-grid">
+                <!-- Services will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h3 class="section-title">Lo que dicen nuestros clientes</h3>
+            <div class="reviews-grid" id="reviews-grid">
+                <!-- Reviews will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info">
+        <div class="container">
+            <div class="info-grid">
+                <!-- Location & Hours Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i data-lucide="map-pin"></i>
+                        <h4>Ubicación y Horarios</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="info-section">
+                            <h5>Dirección</h5>
+                            <p>Calle de Lombía 6, Madrid, ES, 28009</p>
+                            <p class="info-note">A 5 min a pie de la parada de metro de Goya</p>
+                            <div class="map-container">
+                                <a class="static-map-link" href="https://www.google.com/maps/search/?api=1&query=Calle%20de%20Lomb%C3%ADa%206%20Madrid%2028009%20ES" target="_blank" rel="noreferrer">
+                                    <img class="static-map-image" src="https://maps.a-cdn.net/static/treatwell/?center=40.4263246,-3.672876&zoom=16&size=650x288&markers=icon:https://cdn1.treatwell.net/images/view/v2.i1105929.w28.h24.xCCE9E5B8.png|40.4255022,-3.6726451&scale=2" alt="Mapa de ubicación de ONIC Beauty en Calle de Lombía 6, Madrid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="info-section">
+                            <h5 class="hours-title">
+                                <i data-lucide="clock"></i>
+                                Horarios de Apertura
+                            </h5>
+                            <div class="hours-list" id="hours-list">
+                                <!-- Hours will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services & Payment Card -->
+                <div class="info-card">
+                    <div class="card-header">
+                        <i data-lucide="credit-card"></i>
+                        <h4>Información del Servicio</h4>
+                    </div>
+                    <div class="card-content">
+                        <div class="info-section">
+                            <h5>Métodos de Pago</h5>
+                            <div class="badges">
+                                <span class="badge">Efectivo</span>
+                                <span class="badge">Tarjeta de Crédito</span>
+                                <span class="badge">Tarjeta de Débito</span>
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="info-section">
+                            <h5 class="languages-title">
+                                <i data-lucide="languages"></i>
+                                Idiomas
+                            </h5>
+                            <div class="badges">
+                                <span class="badge">Castellano</span>
+                                <span class="badge">Inglés</span>
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="info-section">
+                            <h5>Nuestro Equipo</h5>
+                            <div class="team-card">
+                                <h6>Andreia</h6>
+                                <p class="team-role">Especialista en tratamientos de pelo y faciales</p>
+                                <p class="team-quote">"Gracias a sus expertas manos podrás disfrutar de una experiencia única."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3>ONIC Beauty</h3>
+                </div>
+                <p class="footer-description">
+                    Ambiente acogedor y amigable. Nos especializamos en belleza y en hacer que te sientas increíble.
+                </p>
+                <button class="btn btn-outline footer-btn" id="footer-reservar-btn">
+                    <i data-lucide="calendar"></i>
+                    <span>Reserva tu cita ahora</span>
+                </button>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 ONIC Beauty. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modal -->
+    <div class="modal" id="service-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="modal-title"></h4>
+                <button class="modal-close" id="modal-close">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="modal-price" id="modal-price"></div>
+                    <div class="modal-duration" id="modal-duration"></div>
+                    <div class="modal-category" id="modal-category"></div>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-primary modal-btn" id="modal-reservar">
+                        <i data-lucide="calendar"></i>
+                        Reservar Servicio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-button" id="whatsapp-btn">
+        <i data-lucide="message-circle"></i>
+    </div>
+
+    <script src="js/lucide.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
