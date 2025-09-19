@@ -17,8 +17,8 @@ Una aplicación web estática mobile-first responsive para el salón de belleza 
 ```
 onic-beauty-static/
 ├── index.html          # Página principal
-├── styles.css          # Estilos CSS mobile-first
-├── script.js           # JavaScript vanilla para funcionalidad
+├── css/styles.css          # Estilos CSS mobile-first
+├── js/script.js           # JavaScript vanilla para funcionalidad
 └── README.md           # Este archivo
 ```
 
